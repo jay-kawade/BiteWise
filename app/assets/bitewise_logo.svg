@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 32" width="150" height="32">
+  <defs>
+    <mask id="bite">
+      <rect width="32" height="32" fill="#fff"/>
+      <circle cx="27.5" cy="9" r="4.2" fill="#000"/>
+      <circle cx="29" cy="15.5" r="3.6" fill="#000"/>
+    </mask>
+  </defs>
+  <circle cx="15" cy="18" r="12" fill="#2F5D3A" mask="url(#bite)"/>
+  <path d="M15 6.5c0-2.6 1.7-4.4 4.6-4.6-.2 2.8-1.9 4.5-4.6 4.6z" fill="#D9623B"/>
+  <path d="M10.5 18.5l3 3 6-6.5" fill="none" stroke="#F7F4EE" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="38" y="24" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="700" fill="#23211C" letter-spacing="-0.3">Bite<tspan fill="#2F5D3A">Wise</tspan></text>
+</svg>

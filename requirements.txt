@@ -1,0 +1,55 @@
+# ==============================================================================
+# Personalized Nutrition Recommendation and Food Intelligence System
+# Python dependencies
+#
+# Install with:  pip install -r requirements.txt
+# Tested with Python 3.10 - 3.13
+#
+# Minimum versions are pinned (not exact versions) so this installs cleanly
+# across different student machines/Python versions. Exact versions used
+# during development are noted in comments for reference.
+# ==============================================================================
+
+# --- Web application / UI ---
+streamlit>=1.38            # developed/tested with 1.51
+
+# --- Data handling ---
+pandas>=2.2
+numpy>=1.26
+
+# --- Machine learning ---
+scikit-learn>=1.5
+joblib>=1.4
+
+# --- Charts (used inside the Streamlit dashboard) ---
+plotly>=5.23
+
+# --- Image processing / OCR (Food Scanner module) ---
+opencv-python-headless>=4.10
+pytesseract>=0.3.13
+Pillow>=10.4
+
+# --- Fuzzy text matching (used for ingredient/allergen matching and OCR error tolerance) ---
+rapidfuzz>=3.9
+
+# --- Environment variable management ---
+python-dotenv>=1.0
+
+# --- Optional: conversational AI agent backend (only used if ANTHROPIC_API_KEY is set) ---
+anthropic>=0.34
+
+# --- Testing ---
+pytest>=8.3
+pytest-cov>=5.0
+
+# ==============================================================================
+# NOTE ON pytesseract:
+# pytesseract is a Python wrapper around the Tesseract OCR *engine*, which is a
+# separate program that must be installed on the operating system itself
+# (it is not a pip package). See README.md "Food Scanner setup" section.
+#   - macOS:   brew install tesseract
+#   - Ubuntu:  sudo apt-get install tesseract-ocr
+#   - Windows: https://github.com/UB-Mannheim/tesseract/wiki
+# If Tesseract is not installed, the Food Scanner automatically runs in a
+# documented MOCK OCR mode so the rest of the application keeps working.
+# ==============================================================================
